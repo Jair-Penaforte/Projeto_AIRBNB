@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <section className="flex justify-center items-center p-8">
+    <section className="flex justify-center items-center p-18">
       <div className="flex flex-col items-center mx-auto max-w-96xl  gap-4">
         <h1 className="text-3xl font-bold">Faça seu Login:</h1>
         <form className="flex flex-col gap-2 w-full">
