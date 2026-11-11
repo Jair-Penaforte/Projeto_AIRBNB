@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="shadow-md">
-      <div className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
-        <p className="text-2xl text-primary-400">AIRBNB</p>
-        <div className="flex  items-center border border-gray-300 px-4 py-2 rounded-full ">
+    <header className="shadow-md">
+      <div className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto sm:px-8">
+        <Link to="/" className="text-2xl text-primary-400">
+          AIRBNB
+        </Link>
+        <Link
+          to="/"
+          className="hidden lg:flex  items-center border border-gray-300 px-4 py-2 rounded-full "
+        >
           <p className="pr-2 pl-2 border-r border-r-gray">Qualquer Lugar</p>
           <p className="pr-2 pl-2 border-r border-r-gray">Qualquer Semana</p>
           <p className="pr-2 pl-2 ">Hóspedes</p>
@@ -26,8 +32,11 @@ const Header = () => {
               />
             </svg>
           </div>
-        </div>
-        <div className="flex  items-center border border-gray-300 px-4 py-2 gap-2 rounded-full ">
+        </Link>
+        <Link
+          to="/login"
+          className="flex  items-center border border-gray-300 px-4 py-2 gap-2 rounded-full "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -54,10 +63,10 @@ const Header = () => {
             />
           </svg>
 
-          <p>Diego XYZ</p>
-        </div>
+          <p className="max-w-20 truncate sm:max-w-32">Diego XYZ diego diego</p>
+        </Link>
       </div>
-    </div>
+    </header>
   );
 };
 
